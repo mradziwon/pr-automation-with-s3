@@ -65,7 +65,7 @@ func GetInfo(repo ProjectInfo, action string) ProjectInfo {
 	if action == "deploy" && bucket == "" {
 		logger.FailOnNoFlag("AWS_S3_BUCKET is not set:")
 	}
-	repo.Bucket = strings.ToLower(bucket + ".auto-deploy")
+	repo.Bucket = strings.ToLower(bucket)
 
 	// setting dist folder
 	repo.DistFolder = getDistFolder()

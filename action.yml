@@ -3,7 +3,7 @@ description: "It simple Build the aws S3 bucket, build the applicaton and deploy
 author: razzkumar
 runs:
   using: docker
-  image: docker://mradziwon/pr-automation-with-s3:v1.0.1
+  image: docker://mradziwon/pr-automation-with-s3:v1.0.2
 branding:
   icon: upload-cloud
   color: green
